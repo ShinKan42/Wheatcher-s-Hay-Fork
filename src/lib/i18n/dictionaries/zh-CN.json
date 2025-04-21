@@ -3312,7 +3312,7 @@
   "marketplace.signAndList": "签名 & 上架",
   "marketplace.itemInUse": "物品正在使用",
   "marketplace.availableCount": "可用：{{count}}",
-  "marketplace.itemSecured": "物品已妥当",
+  "marketplace.itemSecured": "物品已妥置",
   "marketplace.youDontOwn": "您未拥有这件物品！",
   "marketplace.itemInUseWarning": "此物品目前正在被您的农场使用。您必须先把它移到您的库存。",
   "description.factionShop.paella.one": "一道经典的西班牙菜，味道浓郁。",
