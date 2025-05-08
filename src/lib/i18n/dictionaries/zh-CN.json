@@ -103,7 +103,7 @@
   "beehive.beeSwarm": "蜂群",
   "beehive.honeyProductionPaused": "蜂蜜生产暂停",
   "beehive.yield": "产量",
-  "beehive.honeyPerFullHive": "1 蜂蜜 / 满蜂箱",
+  "beehive.honeyPerFullHive": "{{multiplier}} 蜂蜜 / 满蜂箱",
   "beehive.speed": "速度",
   "beehive.fullHivePerDay": "每天 {{speed}} 个 {{hive}}",
   "beehive.estimatedFull": "填满预计",
