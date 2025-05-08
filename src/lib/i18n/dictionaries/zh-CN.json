@@ -5868,7 +5868,7 @@
   "flower.launch.one": "$FLOWER ERC20 已在 BASE 上线",
   "flower.launch.two": "存款已启用",
   "flower.launch.three": "流动性奖励和提款即将开始",
-  "deposit.items": "存款游戏物品",
+  "deposit.items": "存入游戏物品",
   "withdraw.sfl.available": "{{flower}} FLOWER 可供提款",
   "withdraw.flower.limited": "在首次推出$FLOWER期间，您可以提取的$FLOWER金额是有限的。",
   "socialTask.merkl": "默克尔唱片奖励",
