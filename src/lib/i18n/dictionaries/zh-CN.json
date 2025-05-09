@@ -4369,8 +4369,8 @@
   "calendar.events.tsunami.prevention": "红树林",
   "calendar.events.greatFreeze.prevention": "热石",
   "calendar.events.sunshower.title": "日光浴",
-  "sunshower.info.one": "你的庄稼生长速度变为 2 倍！",
-  "sunshower.tooltip": "阳光明媚-庄稼生长速度变为 2 倍。",
+  "sunshower.info.one": "你的庄稼生长速度快了 2 倍！",
+  "sunshower.tooltip": "阳光明媚 - 庄稼生长速度提高了 2 倍。",
   "sunshower.specialEvent": "特别活动-太阳雨",
   "fullMoon.one": "所有茄子都一夜长出来了。",
   "fullMoon.two": "Betty 将供应 Duskberry、Lunara 和 Celestine 种子。",
@@ -5863,11 +5863,12 @@
   "flower.launch.two": "存款已启用",
   "flower.launch.three": "流动性奖励和提款即将开始",
   "description.giantZuchinni.boost": "-50% 西葫芦生长时间",
-  "description.quarry.boost": "不用镐开采石头",
-  "description.obsidianNecklace.boost": "-50% 熔岩洞时间",
-  "description.medicApron.boost": "-50% 治疗动物的药物",
+  "description.quarry.boost": "无需用镐开采石脉",
+  "description.obsidianNecklace.boost": "-50% 岩浆池恢复速度",
+  "description.medicApron.boost": "使用 0.5 瓶 Barn Delight 治愈牲畜",
   "description.broccoliHat.boost": "-50% 西兰花生长时间",
-  "description.redPepperOnesie.boost": "-25% 红辣椒生长时间",
+  "description.redPepperOnesie.boost": "-25% 红椒生长时间",
   "deposit.items": "存入游戏物品",
-  "withdraw.sfl.available": "{{flower}} FLOWER 可供提款"
+  "withdraw.sfl.available": "{{flower}} FLOWER 可供提款",
+  "withdraw.flower.limited": "在首次推出 $FLOWER 期间，您可以提取的 $FLOWER 金额是有限的。"
 }
