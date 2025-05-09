@@ -1,5 +1,8 @@
-import { GameState, Rock } from "features/game/types/game";
-import { ResourceName } from "features/game/types/resources";
+import { GameState } from "features/game/types/game";
+import {
+  ResourceName,
+  RESOURCE_DIMENSIONS,
+} from "features/game/types/resources";
 import Decimal from "decimal.js-light";
 import { produce } from "immer";
 
@@ -33,19 +36,18 @@ export function placeIron({
       throw new Error("No iron available");
     }
 
-    const iron: Rock = {
-      createdAt,
-      x: action.coordinates.x,
-      y: action.coordinates.y,
-      stone: {
-        amount: 1,
-        minedAt: 0,
-      },
-    };
-
     game.iron = {
       ...game.iron,
-      [action.id as unknown as number]: iron,
+      [action.id as unknown as number]: {
+        createdAt: createdAt,
+        x: action.coordinates.x,
+        y: action.coordinates.y,
+        ...RESOURCE_DIMENSIONS["Iron Rock"],
+        stone: {
+          amount: 0,
+          minedAt: 0,
+        },
+      },
     };
 
     return game;

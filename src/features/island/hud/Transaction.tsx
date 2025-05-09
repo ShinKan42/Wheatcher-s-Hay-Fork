@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ButtonPanel, Panel } from "components/ui/Panel";
 import { Label } from "components/ui/Label";
 
@@ -42,7 +42,6 @@ const compareTransaction = (prev?: GameTransaction, next?: GameTransaction) => {
 export const TransactionCountdown: React.FC = () => {
   const { gameService } = useContext(Context);
   const [showTransaction, setShowTransaction] = useState(false);
-  const hasInitialized = useRef(false);
 
   const transaction = useSelector(
     gameService,
@@ -51,15 +50,8 @@ export const TransactionCountdown: React.FC = () => {
   );
 
   useEffect(() => {
-    if (!hasInitialized.current) {
-      hasInitialized.current = true;
-      return;
-    }
-
-    // Only show transaction modal if we have a transaction and we've initialized
-    if (transaction) {
-      setShowTransaction(true);
-    }
+    // Whenever something with transaction changes - pop up
+    setShowTransaction(true);
   }, [transaction]);
 
   if (!transaction) return null;

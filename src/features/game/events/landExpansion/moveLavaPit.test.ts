@@ -20,6 +20,8 @@ describe("moveLavaPit", () => {
             "1": {
               x: 1,
               y: 1,
+              height: 2,
+              width: 2,
               createdAt: 0,
             },
           },
@@ -47,6 +49,8 @@ describe("moveLavaPit", () => {
           stones: {
             "123": {
               createdAt: Date.now(),
+              height: 2,
+              width: 2,
               stone: {
                 amount: 1,
                 minedAt: 0,
@@ -59,6 +63,8 @@ describe("moveLavaPit", () => {
             "1": {
               x: 1,
               y: 1,
+              height: 2,
+              width: 2,
               createdAt: 0,
             },
           },
@@ -87,6 +93,8 @@ describe("moveLavaPit", () => {
           "1": {
             x: 1,
             y: 1,
+            height: 2,
+            width: 2,
             createdAt: 0,
           },
         },
@@ -97,6 +105,8 @@ describe("moveLavaPit", () => {
       "1": {
         x: 5,
         y: 6,
+        height: 2,
+        width: 2,
         createdAt: 0,
       },
     });

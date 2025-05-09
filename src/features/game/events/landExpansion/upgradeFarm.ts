@@ -85,6 +85,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: -2,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "2": {
       createdAt: 1703364823336,
@@ -95,6 +97,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: -1,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "3": {
       createdAt: 1703364823336,
@@ -105,86 +109,117 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: 0,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "4": {
       createdAt: 1703364823336,
       x: -2,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "5": {
       createdAt: 1703364823336,
       x: -1,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "6": {
       createdAt: 1703364823336,
       x: 0,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "7": {
       createdAt: 1703364823336,
       x: -2,
       y: 1,
+      height: 1,
+      width: 1,
     },
     "8": {
       createdAt: 1703364823336,
       x: -1,
       y: 1,
+      height: 1,
+      width: 1,
     },
     "9": {
       createdAt: 1703364823336,
       x: 0,
       y: 1,
+      height: 1,
+      width: 1,
     },
     "10": {
       createdAt: 1703365405829,
       x: 1,
       y: 1,
+      width: 1,
+      height: 1,
     },
     "11": {
       createdAt: 1703365405976,
       x: 1,
       y: 0,
+      width: 1,
+      height: 1,
     },
     12: {
       createdAt: 1703365406093,
       x: 1,
       y: -1,
+      width: 1,
+      height: 1,
     },
     13: {
       createdAt: 1703365409614,
       x: 2,
       y: 1,
+      width: 1,
+      height: 1,
     },
     "14": {
       createdAt: 1703365409776,
       x: 2,
       y: 0,
+      width: 1,
+      height: 1,
     },
     "15": {
       createdAt: 1703365409926,
       x: 2,
       y: -1,
+      width: 1,
+      height: 1,
     },
     "16": {
       createdAt: 1703365428830,
       x: 3,
       y: 1,
+      width: 1,
+      height: 1,
     },
     "17": {
       createdAt: 1703365429062,
       x: 3,
       y: 0,
+      width: 1,
+      height: 1,
     },
     18: {
       createdAt: 1703365429630,
       x: 3,
       y: -1,
+      width: 1,
+      height: 1,
     },
   },
   fruitPatches: {
     "1": {
-      createdAt: 0,
       fruit: {
         amount: 2,
         name: "Apple",
@@ -194,9 +229,10 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: 0,
       y: 9,
+      height: 2,
+      width: 2,
     },
     "2": {
-      createdAt: 0,
       fruit: {
         amount: 1,
         name: "Apple",
@@ -206,6 +242,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: -2,
       y: 9,
+      height: 2,
+      width: 2,
     },
   },
   trees: {
@@ -216,6 +254,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: 3,
       y: 6,
+      height: 2,
+      width: 2,
     },
     "2": {
       wood: {
@@ -224,6 +264,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: 3,
       y: 4,
+      height: 2,
+      width: 2,
     },
     "3": {
       wood: {
@@ -232,12 +274,16 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: 7,
       y: 9,
+      height: 2,
+      width: 2,
     },
   },
   gold: {
     1: {
       x: 3,
       y: 9,
+      width: 1,
+      height: 1,
       stone: {
         amount: 2,
         minedAt: 0,
@@ -248,6 +294,8 @@ const INITIAL_SPRING_LAND: Pick<
     "1": {
       x: 5,
       y: 8,
+      width: 1,
+      height: 1,
       stone: {
         amount: 1,
         minedAt: 0,
@@ -262,6 +310,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: -3,
       y: 5,
+      height: 1,
+      width: 1,
     },
     "2": {
       stone: {
@@ -270,6 +320,8 @@ const INITIAL_SPRING_LAND: Pick<
       },
       x: -2,
       y: 3,
+      height: 1,
+      width: 1,
     },
   },
 };
@@ -334,6 +386,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: -2,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "2": {
       createdAt: 1703364823336,
@@ -344,6 +398,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: -1,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "3": {
       createdAt: 1703364823336,
@@ -354,86 +410,117 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: 0,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "4": {
       createdAt: 1703364823336,
       x: -2,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "5": {
       createdAt: 1703364823336,
       x: -1,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "6": {
       createdAt: 1703364823336,
       x: 0,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "7": {
       createdAt: 1703364823336,
       x: -2,
       y: 1,
+      height: 1,
+      width: 1,
     },
     "8": {
       createdAt: 1703364823336,
       x: -1,
       y: 1,
+      height: 1,
+      width: 1,
     },
     "9": {
       createdAt: 1703364823336,
       x: 0,
       y: 1,
+      height: 1,
+      width: 1,
     },
     "10": {
       createdAt: 1703365405829,
       x: 1,
       y: 1,
+      width: 1,
+      height: 1,
     },
     "11": {
       createdAt: 1703365405976,
       x: 1,
       y: 0,
+      width: 1,
+      height: 1,
     },
     12: {
       createdAt: 1703365406093,
       x: 1,
       y: -1,
+      width: 1,
+      height: 1,
     },
     13: {
       createdAt: 1703365409614,
       x: 2,
       y: 1,
+      width: 1,
+      height: 1,
     },
     "14": {
       createdAt: 1703365409776,
       x: 2,
       y: 0,
+      width: 1,
+      height: 1,
     },
     "15": {
       createdAt: 1703365409926,
       x: 2,
       y: -1,
+      width: 1,
+      height: 1,
     },
     "16": {
       createdAt: 1703365428830,
       x: 3,
       y: 1,
+      width: 1,
+      height: 1,
     },
     "17": {
       createdAt: 1703365429062,
       x: 3,
       y: 0,
+      width: 1,
+      height: 1,
     },
     18: {
       createdAt: 1703365429630,
       x: 3,
       y: -1,
+      width: 1,
+      height: 1,
     },
   },
   fruitPatches: {
     "1": {
-      createdAt: 0,
       fruit: {
         amount: 2,
         name: "Apple",
@@ -443,9 +530,10 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: 0,
       y: 9,
+      height: 2,
+      width: 2,
     },
     "2": {
-      createdAt: 0,
       fruit: {
         amount: 1,
         name: "Apple",
@@ -455,6 +543,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: -2,
       y: 9,
+      height: 2,
+      width: 2,
     },
   },
   trees: {
@@ -465,6 +555,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: 4,
       y: 6,
+      height: 2,
+      width: 2,
     },
     "2": {
       wood: {
@@ -473,6 +565,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: 4,
       y: 4,
+      height: 2,
+      width: 2,
     },
     "3": {
       wood: {
@@ -481,12 +575,16 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: 7,
       y: 9,
+      height: 2,
+      width: 2,
     },
   },
   gold: {
     1: {
       x: 3,
       y: 9,
+      width: 1,
+      height: 1,
       stone: {
         amount: 2,
         minedAt: 0,
@@ -497,6 +595,8 @@ const INITIAL_DESERT_LAND: Pick<
     "1": {
       x: 5,
       y: 8,
+      width: 1,
+      height: 1,
       stone: {
         amount: 1,
         minedAt: 0,
@@ -511,6 +611,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: -3,
       y: 5,
+      height: 1,
+      width: 1,
     },
     "2": {
       stone: {
@@ -519,6 +621,8 @@ const INITIAL_DESERT_LAND: Pick<
       },
       x: -2,
       y: 3,
+      height: 1,
+      width: 1,
     },
   },
 };
@@ -584,6 +688,8 @@ const INITIAL_VOLCANO_LAND: Pick<
     "1": {
       x: -8,
       y: 8,
+      width: 2,
+      height: 2,
       oil: {
         amount: 10,
         drilledAt: 0,
@@ -602,6 +708,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: -1,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "2": {
       createdAt: 1703364823336,
@@ -612,6 +720,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: 0,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "3": {
       createdAt: 1703364823336,
@@ -622,86 +732,117 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: 1,
       y: -1,
+      height: 1,
+      width: 1,
     },
     "4": {
       createdAt: 1703364823336,
       x: -1,
       y: -2,
+      height: 1,
+      width: 1,
     },
     "5": {
       createdAt: 1703364823336,
       x: 0,
       y: -2,
+      height: 1,
+      width: 1,
     },
     "6": {
       createdAt: 1703364823336,
       x: 1,
       y: -2,
+      height: 1,
+      width: 1,
     },
     "7": {
       createdAt: 1703364823336,
       x: -1,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "8": {
       createdAt: 1703364823336,
       x: 0,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "9": {
       createdAt: 1703364823336,
       x: 1,
       y: 0,
+      height: 1,
+      width: 1,
     },
     "10": {
       createdAt: 1703365405829,
       x: 2,
       y: 0,
+      width: 1,
+      height: 1,
     },
     "11": {
       createdAt: 1703365405976,
       x: 2,
       y: -1,
+      width: 1,
+      height: 1,
     },
     12: {
       createdAt: 1703365406093,
       x: 2,
       y: -2,
+      width: 1,
+      height: 1,
     },
     13: {
       createdAt: 1703365409614,
       x: 3,
       y: 0,
+      width: 1,
+      height: 1,
     },
     "14": {
       createdAt: 1703365409776,
       x: 3,
       y: -1,
+      width: 1,
+      height: 1,
     },
     "15": {
       createdAt: 1703365409926,
       x: 3,
       y: -2,
+      width: 1,
+      height: 1,
     },
     "16": {
       createdAt: 1703365428830,
       x: 4,
       y: 0,
+      width: 1,
+      height: 1,
     },
     "17": {
       createdAt: 1703365429062,
       x: 4,
       y: -1,
+      width: 1,
+      height: 1,
     },
     18: {
       createdAt: 1703365429630,
       x: 4,
       y: -2,
+      width: 1,
+      height: 1,
     },
   },
   fruitPatches: {
     "1": {
-      createdAt: 0,
       fruit: {
         amount: 2,
         name: "Apple",
@@ -711,9 +852,10 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: 0,
       y: 9,
+      height: 2,
+      width: 2,
     },
     "2": {
-      createdAt: 0,
       fruit: {
         amount: 1,
         name: "Apple",
@@ -723,6 +865,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: -2,
       y: 9,
+      height: 2,
+      width: 2,
     },
   },
   trees: {
@@ -733,6 +877,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: 5,
       y: 9,
+      height: 2,
+      width: 2,
       createdAt: Date.now(),
     },
     "2": {
@@ -742,6 +888,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: 3,
       y: 9,
+      height: 2,
+      width: 2,
       createdAt: Date.now(),
     },
     "3": {
@@ -751,6 +899,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: 7,
       y: 9,
+      height: 2,
+      width: 2,
       createdAt: Date.now(),
     },
   },
@@ -758,6 +908,8 @@ const INITIAL_VOLCANO_LAND: Pick<
     1: {
       x: 2,
       y: 9,
+      width: 1,
+      height: 1,
       stone: {
         amount: 2,
         minedAt: 0,
@@ -769,6 +921,8 @@ const INITIAL_VOLCANO_LAND: Pick<
     "1": {
       x: 5,
       y: 7,
+      width: 1,
+      height: 1,
       stone: {
         amount: 1,
         minedAt: 0,
@@ -784,6 +938,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: -3,
       y: 5,
+      height: 1,
+      width: 1,
       createdAt: Date.now(),
     },
     "2": {
@@ -793,6 +949,8 @@ const INITIAL_VOLCANO_LAND: Pick<
       },
       x: -2,
       y: 3,
+      height: 1,
+      width: 1,
       createdAt: Date.now(),
     },
   },
@@ -1029,7 +1187,7 @@ export const populateSeason = (createdAt: number): Season => {
   return { startedAt: startAt, season };
 };
 
-export function upgrade({ state, createdAt = Date.now() }: Options) {
+export function upgrade({ state, action, createdAt = Date.now() }: Options) {
   let game = cloneDeep(state) as GameState;
 
   const upcoming = ISLAND_UPGRADE[game.island.type];

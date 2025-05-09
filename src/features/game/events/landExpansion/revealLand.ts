@@ -74,6 +74,8 @@ export function revealLand({
     // Add Trees
     land.trees?.forEach((coords) => {
       game.trees[randomUUID().slice(0, 8)] = {
+        height: 2,
+        width: 2,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         wood: { amount: 1, choppedAt: 0 },
@@ -84,6 +86,8 @@ export function revealLand({
     // Add Stones
     land.stones?.forEach((coords) => {
       game.stones[randomUUID().slice(0, 8)] = {
+        height: 1,
+        width: 1,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         stone: { amount: 1, minedAt: 0 },
@@ -96,6 +100,8 @@ export function revealLand({
     // Add Iron
     land.iron?.forEach((coords) => {
       game.iron[randomUUID().slice(0, 8)] = {
+        height: 1,
+        width: 1,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         stone: { amount: 1, minedAt: 0 },
@@ -108,6 +114,8 @@ export function revealLand({
     // Add Gold
     land.gold?.forEach((coords) => {
       game.gold[randomUUID().slice(0, 8)] = {
+        height: 1,
+        width: 1,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         stone: { amount: 1, minedAt: 0 },
@@ -120,6 +128,8 @@ export function revealLand({
     // Add Crimstone
     land.crimstones?.forEach((coords) => {
       game.crimstones[randomUUID().slice(0, 8)] = {
+        height: 2,
+        width: 2,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         stone: { amount: 1, minedAt: 0 },
@@ -134,6 +144,8 @@ export function revealLand({
     land.plots?.forEach((coords) => {
       game.crops[randomUUID().slice(0, 8)] = {
         createdAt: Date.now(),
+        height: 1,
+        width: 1,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         crop: {
@@ -151,7 +163,8 @@ export function revealLand({
     // Add Fruit patches
     land.fruitPatches?.forEach((coords) => {
       game.fruitPatches[randomUUID().slice(0, 8)] = {
-        createdAt: Date.now(),
+        height: 2,
+        width: 2,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         fruit: {
@@ -171,6 +184,8 @@ export function revealLand({
     land.sunstones?.forEach((coords) => {
       const id = randomUUID();
       game.sunstones[id] = {
+        height: 2,
+        width: 2,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         stone: { amount: 1, minedAt: 0 },
@@ -185,6 +200,8 @@ export function revealLand({
     land.beehives?.forEach((coords) => {
       const id = randomUUID();
       game.beehives[id] = {
+        height: 1,
+        width: 1,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         honey: { produced: 0, updatedAt: Date.now() },
@@ -200,6 +217,8 @@ export function revealLand({
     land.flowerBeds?.forEach((coords) => {
       const id = randomUUID();
       game.flowers.flowerBeds[id] = {
+        height: 1,
+        width: 3,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         createdAt,
@@ -212,6 +231,8 @@ export function revealLand({
     land.oilReserves?.forEach((coords) => {
       const id = randomUUID();
       game.oilReserves[id] = {
+        height: 2,
+        width: 2,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         createdAt,
@@ -230,6 +251,8 @@ export function revealLand({
     land.lavaPits?.forEach((coords) => {
       const id = randomUUID();
       game.lavaPits[id] = {
+        height: 2,
+        width: 2,
         x: coords.x + origin.x,
         y: coords.y + origin.y,
         createdAt,

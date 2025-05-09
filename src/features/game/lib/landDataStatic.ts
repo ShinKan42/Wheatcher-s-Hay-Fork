@@ -127,7 +127,8 @@ export const STATIC_OFFLINE_FARM: GameState = {
         createdAt: 0,
         x: -3,
         y: 3,
-
+        width: 3,
+        height: 1,
         flower: {
           name: "Red Balloon Flower",
           plantedAt: 0,
@@ -140,14 +141,15 @@ export const STATIC_OFFLINE_FARM: GameState = {
     },
   },
   lavaPits: {
-    "1": { createdAt: 0, x: -4, y: -6 },
+    "1": { createdAt: 0, x: -4, y: -6, height: 2, width: 2 },
   },
 
   fruitPatches: {
     "1": {
-      createdAt: 0,
       x: -2,
       y: 6,
+      width: 2,
+      height: 2,
     },
   },
   gold: {},
@@ -161,6 +163,8 @@ export const STATIC_OFFLINE_FARM: GameState = {
       },
       x: 4,
       y: -2,
+      height: 2,
+      width: 2,
     },
     2: {
       wood: {
@@ -169,6 +173,8 @@ export const STATIC_OFFLINE_FARM: GameState = {
       },
       x: 6,
       y: -2,
+      height: 2,
+      width: 2,
     },
   },
   sunstones: {},
@@ -504,9 +510,11 @@ export const STATIC_OFFLINE_FARM: GameState = {
   },
   crops: {
     "1": {
+      width: 1,
       x: -2,
       createdAt: 1703364823336,
       y: 0,
+      height: 1,
       crop: {
         plantedAt: 0,
         name: "Sunflower",
@@ -514,9 +522,11 @@ export const STATIC_OFFLINE_FARM: GameState = {
       },
     },
     "2": {
+      width: 1,
       x: -3,
       createdAt: 1703364823336,
       y: 0,
+      height: 1,
       crop: {
         plantedAt: 0,
         name: "Sunflower",

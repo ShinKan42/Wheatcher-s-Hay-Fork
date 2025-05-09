@@ -1,5 +1,8 @@
-import { FruitPatch, GameState } from "features/game/types/game";
-import { ResourceName } from "features/game/types/resources";
+import { GameState } from "features/game/types/game";
+import {
+  ResourceName,
+  RESOURCE_DIMENSIONS,
+} from "features/game/types/resources";
 import Decimal from "decimal.js-light";
 import { produce } from "immer";
 
@@ -33,15 +36,14 @@ export function placeFruitPatch({
       throw new Error("No fruit patches available");
     }
 
-    const fruitPatch: FruitPatch = {
-      createdAt,
-      x: action.coordinates.x,
-      y: action.coordinates.y,
-    };
-
     game.fruitPatches = {
       ...game.fruitPatches,
-      [action.id as unknown as number]: fruitPatch,
+      [action.id as unknown as number]: {
+        createdAt: createdAt,
+        x: action.coordinates.x,
+        y: action.coordinates.y,
+        ...RESOURCE_DIMENSIONS["Fruit Patch"],
+      },
     };
 
     return game;

@@ -1,7 +1,7 @@
 import cloneDeep from "lodash.clonedeep";
 
 import Decimal from "decimal.js-light";
-import { GameState, LavaPit } from "features/game/types/game";
+import { GameState } from "features/game/types/game";
 import { Coordinates } from "features/game/expansion/components/MapPlacement";
 import { detectCollision } from "features/game/expansion/placeable/lib/collisionDetection";
 import { RESOURCE_DIMENSIONS } from "features/game/types/resources";
@@ -56,15 +56,14 @@ export function placeLavaPit({
     throw new Error("ID exists");
   }
 
-  const lavaPit: LavaPit = {
-    createdAt,
-    x: action.coordinates.x,
-    y: action.coordinates.y,
-  };
-
   game.lavaPits = {
     ...game.lavaPits,
-    [action.id as unknown as number]: lavaPit,
+    [action.id as unknown as number]: {
+      createdAt,
+      x: action.coordinates.x,
+      y: action.coordinates.y,
+      ...RESOURCE_DIMENSIONS["Lava Pit"],
+    },
   };
 
   return game;

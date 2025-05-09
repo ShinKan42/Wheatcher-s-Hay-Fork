@@ -394,6 +394,8 @@ describe("revealLand", () => {
           "1": {
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
             minesLeft: 3,
             stone: {
               amount: 1,
@@ -429,6 +431,8 @@ describe("revealLand", () => {
           "123": {
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
             createdAt: 0,
             drilled: 1,
             oil: {
@@ -466,6 +470,8 @@ describe("revealLand", () => {
           "1": {
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
             minesLeft: 3,
             stone: {
               amount: 1,
@@ -497,6 +503,8 @@ describe("revealLand", () => {
             },
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
           },
         },
         inventory: {
@@ -529,6 +537,8 @@ describe("revealLand", () => {
             },
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
           },
         },
         inventory: {
@@ -561,6 +571,8 @@ describe("revealLand", () => {
             },
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
           },
         },
         inventory: {
@@ -593,6 +605,8 @@ describe("revealLand", () => {
             },
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
           },
         },
         inventory: {
@@ -626,6 +640,8 @@ describe("revealLand", () => {
             },
             x: -3,
             y: 3,
+            height: 2,
+            width: 2,
           },
         },
         inventory: {

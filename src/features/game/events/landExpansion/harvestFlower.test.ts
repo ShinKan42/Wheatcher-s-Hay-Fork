@@ -25,6 +25,8 @@ describe("harvestFlower", () => {
             flowerBeds: {
               [flowerBedId]: {
                 createdAt: 0,
+                height: 0,
+                width: 0,
                 x: 0,
                 y: 0,
               },
@@ -47,6 +49,8 @@ describe("harvestFlower", () => {
             flowerBeds: {
               [flowerBedId]: {
                 createdAt: 0,
+                height: 0,
+                width: 0,
                 x: 0,
                 y: 0,
                 flower: {
@@ -73,6 +77,8 @@ describe("harvestFlower", () => {
           flowerBeds: {
             [flowerBedId]: {
               createdAt: 0,
+              height: 0,
+              width: 0,
               x: 0,
               y: 0,
               flower: {
@@ -100,6 +106,8 @@ describe("harvestFlower", () => {
           flowerBeds: {
             [flowerBedId]: {
               createdAt: 0,
+              height: 0,
+              width: 0,
               x: 0,
               y: 0,
               flower: {
@@ -128,6 +136,8 @@ describe("harvestFlower", () => {
           flowerBeds: {
             [flowerBedId]: {
               createdAt: 0,
+              height: 0,
+              width: 0,
               x: 0,
               y: 0,
               flower: {
@@ -156,6 +166,8 @@ describe("harvestFlower", () => {
           flowerBeds: {
             [flowerBedId]: {
               createdAt: 0,
+              height: 0,
+              width: 0,
               x: 0,
               y: 0,
               flower: {
@@ -184,6 +196,8 @@ describe("harvestFlower", () => {
           flowerBeds: {
             [flowerBedId]: {
               createdAt: 0,
+              height: 0,
+              width: 0,
               x: 0,
               y: 0,
               flower: {
@@ -212,6 +226,8 @@ describe("harvestFlower", () => {
           flowerBeds: {
             [flowerBedId]: {
               createdAt: 0,
+              height: 0,
+              width: 0,
               x: 0,
               y: 0,
               flower: {

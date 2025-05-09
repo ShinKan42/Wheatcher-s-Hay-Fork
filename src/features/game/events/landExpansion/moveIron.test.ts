@@ -9,6 +9,8 @@ describe("moveIron", () => {
           ...TEST_FARM,
           iron: {
             1: {
+              height: 1,
+              width: 1,
               x: 1,
               y: 1,
               stone: {
@@ -33,6 +35,8 @@ describe("moveIron", () => {
         ...TEST_FARM,
         iron: {
           "123": {
+            height: 1,
+            width: 1,
             x: 1,
             y: 1,
             stone: {
@@ -41,6 +45,8 @@ describe("moveIron", () => {
             },
           },
           "456": {
+            height: 1,
+            width: 1,
             x: 4,
             y: 4,
             stone: {
@@ -49,6 +55,8 @@ describe("moveIron", () => {
             },
           },
           "789": {
+            height: 1,
+            width: 1,
             x: 8,
             y: 8,
             stone: {
@@ -67,6 +75,8 @@ describe("moveIron", () => {
 
     expect(gameState.iron).toEqual({
       "123": {
+        height: 1,
+        width: 1,
         x: 2,
         y: 2,
         stone: {
@@ -75,6 +85,8 @@ describe("moveIron", () => {
         },
       },
       "456": {
+        height: 1,
+        width: 1,
         x: 4,
         y: 4,
         stone: {
@@ -83,6 +95,8 @@ describe("moveIron", () => {
         },
       },
       "789": {
+        height: 1,
+        width: 1,
         x: 8,
         y: 8,
         stone: {
@@ -112,6 +126,8 @@ describe("moveIron", () => {
           bumpkin: INITIAL_BUMPKIN,
           iron: {
             1: {
+              height: 1,
+              width: 1,
               x: 1,
               y: 2,
               stone: {

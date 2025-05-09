@@ -6,6 +6,7 @@ import {
   CropPlot,
   GameState,
   InventoryItemName,
+  Position,
 } from "../../types/game";
 import {
   COLLECTIBLES_DIMENSIONS,
@@ -17,10 +18,7 @@ import {
 } from "features/game/lib/collectibleBuilt";
 import { setPrecision } from "lib/utils/formatNumber";
 import { SEASONAL_SEEDS, SeedName, SEEDS } from "features/game/types/seeds";
-import {
-  isWithinAOE,
-  Position,
-} from "features/game/expansion/placeable/lib/collisionDetection";
+import { isWithinAOE } from "features/game/expansion/placeable/lib/collisionDetection";
 import {
   isBasicCrop,
   isMediumCrop,
@@ -49,7 +47,6 @@ import {
 } from "features/game/types/calendar";
 import { getCurrentSeason } from "features/game/types/seasons";
 import { hasVipAccess } from "features/game/lib/vipAccess";
-import { RESOURCE_DIMENSIONS } from "features/game/types/resources";
 
 export type LandExpansionPlantAction = {
   type: "seed.planted";
@@ -358,7 +355,8 @@ export const getCropPlotTime = ({
     const plotPosition: Position = {
       x: plot?.x,
       y: plot?.y,
-      ...RESOURCE_DIMENSIONS["Crop Plot"],
+      height: plot.height,
+      width: plot.width,
     };
 
     if (
@@ -641,7 +639,8 @@ export function getCropYieldAmount({
     const plotPosition: Position = {
       x: plot?.x,
       y: plot?.y,
-      ...RESOURCE_DIMENSIONS["Crop Plot"],
+      height: plot.height,
+      width: plot.width,
     };
 
     if (
@@ -671,15 +670,7 @@ export function getCropYieldAmount({
 
     if (
       isPlotCrop(crop) &&
-      isWithinAOE(
-        "Sir Goldensnout",
-        position,
-        {
-          ...plot,
-          ...RESOURCE_DIMENSIONS["Crop Plot"],
-        },
-        bumpkin.skills,
-      )
+      isWithinAOE("Sir Goldensnout", position, plot as CropPlot, bumpkin.skills)
     ) {
       amount = amount + 0.5;
     }
@@ -706,7 +697,8 @@ export function getCropYieldAmount({
     const plotPosition: Position = {
       x: plot?.x,
       y: plot?.y,
-      ...RESOURCE_DIMENSIONS["Crop Plot"],
+      height: plot.height,
+      width: plot.width,
     };
 
     if (
@@ -741,7 +733,8 @@ export function getCropYieldAmount({
     const plotPosition: Position = {
       x: plot?.x,
       y: plot?.y,
-      ...RESOURCE_DIMENSIONS["Crop Plot"],
+      height: plot.height,
+      width: plot.width,
     };
 
     if (
