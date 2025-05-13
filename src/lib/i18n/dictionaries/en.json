@@ -3674,6 +3674,7 @@
   "withdraw.bumpkin.wearing": "Your Bumpkin is currently wearing the following item(s) that can't be withdrawn. You will need to unequip them before you can withdraw.",
   "withdraw.buds": "Select Buds to withdraw",
   "withdraw.budRestricted": "Used in today's bud box",
+  "withdraw.flower.limited": "During the initial launch of $FLOWER, the amount of $FLOWER you can withdraw is limited.",
   "world.lvl.requirement": "Lvl {{lvl}}",
   "world.factionMembersOnly": "Faction members only",
   "world.newArea": "New",
@@ -5489,7 +5490,6 @@
   "vip.ronin.purchase.warning": "Ronin NFT VIP active. Return 1 day before expiry to purchase VIP.",
   "withdraw.sfl.disabled": "Token withdrawals are temporarily paused while we complete our migration to $FLOWER.",
   "ronin.comingSoon": "April 1st - Use Ronin wallet to purchase gems, mint NFTs, trade & more!",
-  "announcement.lockdown": "To prepare for $FLOWER, $SFL withdrawals and deposits will be disabled from March 24th.",
   "announcement.flowerGems": "Buy Gems with $FLOWER - coming May 2025",
   "announcement.flowerGemsDiscount": "Buy Gems with $FLOWER - save 30%",
   "announcement.gasless": "Gasless transactions are coming April 1st.",
@@ -5869,5 +5869,12 @@
   "flower.launch.one": "$FLOWER ERC20 is live on BASE",
   "flower.launch.two": "Deposits are enabled",
   "flower.launch.three": "Liquidity rewards and withdrawals starting soon",
-  "deposit.items": "Deposit Game Items"
+  "deposit.items": "Deposit Game Items",
+  "socialTask.merkl": "Merkl LP Rewards",
+  "merkl.rewards": "Merkl Rewards",
+  "merkl.description": "Our friends at Merkl are giving away $FLOWER to the community members who are providing liquidity to support ecosystem.",
+  "merkl.disclaimer": "Always DYOR and beware of scams. This is not an investment",
+  "merkl.one": "Claim FLOWER each day in the Merkl app.",
+  "merkl.two": "Bonus rewards each day in-game for the top 10, 50 & 250 providers based on the leaderboard",
+  "merkl.three": "A bonus food boxes & an exclusive wearable for all providers!"
 }

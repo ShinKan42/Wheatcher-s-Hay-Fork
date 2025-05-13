@@ -5183,7 +5183,6 @@
   "deposit.linkedWallet": "Portafoglio collegato:",
   "deposit.refreshWallet": "Aggiorna portafoglio",
   "ronin.comingSoon": "1 aprile - Usa il portafoglio Ronin per acquistare gemme, coniare NFT, fare trading e altro!",
-  "announcement.lockdown": "Per prepararsi a $FLOWER, i prelievi e i depositi in $SFL saranno disabilitati a partire dal 24 marzo.",
   "announcement.flowerGems": "Acquista gemme con $FLOWER - in arrivo a maggio 2025",
   "announcement.gasless": "Le transazioni senza gas arriveranno il 1 aprile.",
   "rocketman.intro": "Salve Bumpkin, sto cercando di costruire una torre di fiori sulla luna!",
@@ -5869,5 +5868,13 @@
   "description.broccoliHat.boost": "-50% Tempo di crescita dei broccoli",
   "description.redPepperOnesie.boost": "-25% Tempo di crescita del peperone rosso",
   "deposit.items": "Deposita oggetti di gioco",
-  "withdraw.sfl.available": "{{flower}} FLOWER è disponibile per il ritiro"
+  "withdraw.sfl.available": "{{flower}} FLOWER è disponibile per il ritiro",
+  "withdraw.flower.limited": "Durante il lancio iniziale di $FLOWER, l'importo di $FLOWER che puoi prelevare è limitato.",
+  "socialTask.merkl": "Premi Merkl LP",
+  "merkl.rewards": "Premi Merkl",
+  "merkl.description": "I nostri amici di Merkl stanno regalando $FLOWER ai membri della comunità che forniscono liquidità per sostenere l'ecosistema.",
+  "merkl.disclaimer": "Fai sempre DYOR e fai attenzione alle truffe. Questo non è un investimento",
+  "merkl.one": "Richiedi FLOWER ogni giorno nell'app Merkl.",
+  "merkl.two": "Premi bonus ogni giorno nel gioco per i primi 10, 50 e 250 fornitori in base alla classifica",
+  "merkl.three": "Una scatola per alimenti in omaggio e un dispositivo indossabile esclusivo per tutti i fornitori!"
 }

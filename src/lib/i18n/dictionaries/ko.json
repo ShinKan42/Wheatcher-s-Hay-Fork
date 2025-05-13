@@ -5183,7 +5183,6 @@
   "deposit.linkedWallet": "연동 지갑:",
   "deposit.refreshWallet": "리프레시 월렛",
   "ronin.comingSoon": "4월 1일 - 로닌 지갑을 사용하여 보석 구매, NFT 발행, 거래 등을 하세요!",
-  "announcement.lockdown": "$FLOWER를 준비하기 위해 $SFL 출금 및 입금은 3월 24일부터 사용할 수 없습니다.",
   "announcement.flowerGems": "$FLOWER로 젬을 구매하세요 - 2025년 5월 출시 예정",
   "announcement.gasless": "가스없는 거래가 4월 1일에 시작됩니다.",
   "rocketman.intro": "안녕 범프킨, 달에 꽃탑을 세우려는 중이야!",
@@ -5869,5 +5868,13 @@
   "description.broccoliHat.boost": "-50% 브로콜리 성장 시간",
   "description.redPepperOnesie.boost": "-25% 레드 페퍼 성장 시간",
   "deposit.items": "게임 아이템 입금",
-  "withdraw.sfl.available": "{{flower}} 꽃은 출금이 가능합니다"
+  "withdraw.sfl.available": "{{flower}} 꽃은 출금이 가능합니다",
+  "withdraw.flower.limited": "$FLOWER의 최초 출시 기간 동안 인출할 수 있는 $FLOWER 금액은 제한되어 있습니다.",
+  "socialTask.merkl": "머클 P 리워드",
+  "merkl.rewards": "머클 리워즈",
+  "merkl.description": "Merkl의 친구들은 생태계를 지원하기 위해 유동성을 제공하는 커뮤니티 회원들에게 $FLOWER를 기부하고 있습니다.",
+  "merkl.disclaimer": "항상 DYOR을 사용하고 사기를 조심하세요.이것은 투자가 아닙니다.",
+  "merkl.one": "Merkl 앱에서 매일 꽃을 받으세요.",
+  "merkl.two": "순위표 기준 상위 10위, 50위, 250개 제공자에게 매일 게임 내 보너스 보상 지급",
+  "merkl.three": "모든 공급자를 위한 보너스 푸드 박스와 전용 웨어러블!"
 }

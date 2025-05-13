@@ -52,6 +52,9 @@ const timePeriodFeatureFlag =
 
 // Used for testing production features and dev access
 export const ADMIN_IDS = [1, 3, 39488, 128727];
+
+export const MANAGER_IDS = [...ADMIN_IDS, 29];
+
 /**
  * Adam: 1
  * Spencer: 3
@@ -85,7 +88,7 @@ const FEATURE_FLAGS = {
     game.createdAt > new Date("2025-01-01T00:00:00Z").getTime() ||
     !game.verified,
   FACE_RECOGNITION_TEST: defaultFeatureFlag,
-  FLOWER_WITHDRAW: usernameFeatureFlag,
+  FLOWER_WITHDRAW: timeBasedFeatureFlag(new Date("2025-05-09T01:00:00Z")),
 
   // Released to All Players on 5th May
   FLOWER_GEMS: timeBasedFeatureFlag(new Date("2025-05-05T00:00:00Z")),
@@ -120,6 +123,11 @@ const FEATURE_FLAGS = {
   FLOWER_BOXES: betaTimeBasedFeatureFlag(new Date("2025-05-01T00:00:00Z")),
 
   MEGA_BOUNTIES: betaTimeBasedFeatureFlag(new Date("2025-05-05T00:00:00Z")),
+
+  WITHDRAWAL_THRESHOLD: timePeriodFeatureFlag({
+    start: new Date("2025-05-08T00:00:00Z"),
+    end: new Date("2025-06-20T00:00:00.000Z"),
+  }),
 } satisfies Record<string, FeatureFlag>;
 
 export type FeatureName = keyof typeof FEATURE_FLAGS;

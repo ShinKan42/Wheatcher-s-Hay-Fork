@@ -5183,7 +5183,6 @@
   "deposit.linkedWallet": "Dompet Berpaut:",
   "deposit.refreshWallet": "Segarkan Dompet",
   "ronin.comingSoon": "1 April - Gunakan dompet Ronin untuk membeli permata, NFT pudina, perdagangan & banyak lagi!",
-  "announcement.lockdown": "Untuk mempersiapkan $FLOWER, pengeluaran dan deposit $SFL akan dilumpuhkan mulai 24 Mac.",
   "announcement.flowerGems": "Beli Permata dengan $FLOWER - akan datang Mei 2025",
   "announcement.gasless": "Transaksi tanpa gas akan datang pada 1 April.",
   "rocketman.intro": "Howdy Bumpkin, saya cuba membina menara bunga ke bulan!",
@@ -5869,5 +5868,13 @@
   "description.broccoliHat.boost": "-50% Masa Pertumbuhan Brokoli",
   "description.redPepperOnesie.boost": "-25% Masa Pertumbuhan Lada Merah",
   "deposit.items": "Deposit Item Permainan",
-  "withdraw.sfl.available": "{{flower}} FLOWER tersedia untuk pengeluaran"
+  "withdraw.sfl.available": "{{flower}} FLOWER tersedia untuk pengeluaran",
+  "withdraw.flower.limited": "Semasa pelancaran awal $FLOWER, jumlah $FLOWER yang boleh anda tarik adalah terhad.",
+  "socialTask.merkl": "Ganjaran Merkl LP",
+  "merkl.rewards": "Ganjaran Merkl",
+  "merkl.description": "Rakan-rakan kami di Merkl memberikan $FLOWER kepada ahli komuniti yang menyediakan kecairan untuk menyokong ekosistem.",
+  "merkl.disclaimer": "Sentiasa DIOR dan berhati-hati dengan penipuan. Ini bukan pelaburan",
+  "merkl.one": "Tuntut BUNGA setiap hari dalam aplikasi Merkl.",
+  "merkl.two": "Ganjaran bonus setiap hari dalam permainan untuk pembekal 10, 50 & 250 teratas berdasarkan papan pendahulu",
+  "merkl.three": "Kotak makanan bonus & pakai eksklusif untuk semua pembekal!"
 }
