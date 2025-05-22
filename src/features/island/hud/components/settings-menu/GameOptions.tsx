@@ -53,15 +53,13 @@ import {
 import { preload } from "swr";
 import { useSelector } from "@xstate/react";
 import { MachineState } from "features/game/lib/gameMachine";
-import {
-  LockdownWidget,
-  ReferralWidget,
-} from "features/announcements/AnnouncementWidgets";
+import { ReferralWidget } from "features/announcements/AnnouncementWidgets";
 import { AirdropPlayer } from "./general-settings/AirdropPlayer";
 import { hasFeatureAccess } from "lib/flags";
 import { FaceRecognitionSettings } from "features/retreat/components/personhood/FaceRecognition";
 import { ModalContext } from "features/game/components/modal/ModalProvider";
 import { TransferAccountWrapper } from "./blockchain-settings/TransferAccount";
+import { DEV_PlayerSearch } from "./developer-options/DEV_PlayerSearch";
 
 export interface ContentComponentProps {
   onSubMenuClick: (id: SettingMenuId) => void;
@@ -288,7 +286,6 @@ export const GameOptionsModal: React.FC<GameOptionsModalProps> = ({
       >
         <SelectedComponent onSubMenuClick={setSelected} onClose={onHide} />
       </CloseButtonPanel>
-      <LockdownWidget />
       <ReferralWidget />
     </Modal>
   );
@@ -318,6 +315,7 @@ export type SettingMenuId =
 
   // Amoy Testnet Actions
   | "hoardingCheck"
+  | "playerSearch"
   // Plaza Settings
   | "pickServer"
   | "shader";
@@ -420,6 +418,11 @@ export const settingMenus: Record<SettingMenuId, SettingMenu> = {
     title: "Hoarding Check (DEV)",
     parent: "amoy",
     content: (props) => <DEV_HoarderCheck {...props} />,
+  },
+  playerSearch: {
+    title: "Player Search (DEV)",
+    parent: "amoy",
+    content: (props) => <DEV_PlayerSearch {...props} />,
   },
 
   // Plaza Settings

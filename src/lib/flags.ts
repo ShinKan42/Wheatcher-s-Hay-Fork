@@ -52,6 +52,13 @@ const timePeriodFeatureFlag =
 
 // Used for testing production features and dev access
 export const ADMIN_IDS = [1, 3, 39488, 128727];
+
+export const MANAGER_IDS = [
+  ...ADMIN_IDS,
+  29, // Aeon
+  130170, // Dcol
+];
+
 /**
  * Adam: 1
  * Spencer: 3
@@ -85,46 +92,22 @@ const FEATURE_FLAGS = {
     game.createdAt > new Date("2025-01-01T00:00:00Z").getTime() ||
     !game.verified,
   FACE_RECOGNITION_TEST: defaultFeatureFlag,
-  FLOWER_WITHDRAW: timeBasedFeatureFlag(new Date("2025-05-09T01:00:00Z")),
 
-  // Released to All Players on 5th May
-  FLOWER_GEMS: timeBasedFeatureFlag(new Date("2025-05-05T00:00:00Z")),
-
-  // Testnet only feature flags - Please don't change these until release
-  LOVE_CHARM_FLOWER_EXCHANGE: timeBasedFeatureFlag(
-    new Date("2025-05-01T00:00:00Z"),
-  ),
-  //Testnet only
-  LOVE_CHARM_REWARD_SHOP: betaTimeBasedFeatureFlag(
-    new Date("2025-05-01T00:00:00Z"),
-  ),
+  FLOWER_DASHBOARD: usernameFeatureFlag,
 
   LEDGER: testnetLocalStorageFeatureFlag("ledger"),
-  BLOCKCHAIN_BOX: (game) =>
-    betaTimeBasedFeatureFlag(new Date("2025-04-07T00:00:00Z"))(game) &&
-    Date.now() < new Date("2025-05-05T00:00:00Z").getTime(),
-
-  // Don't change this feature flag until the love rush event is over
-  LOVE_RUSH: (game) =>
-    betaTimeBasedFeatureFlag(new Date("2025-04-07T00:00:00Z"))(game) &&
-    Date.now() < new Date("2025-05-05T00:00:00Z").getTime(),
 
   EASTER: (game) =>
     betaTimeBasedFeatureFlag(new Date("2025-04-21T00:00:00Z"))(game) &&
     Date.now() < new Date("2025-04-29T00:00:00Z").getTime(),
   STREAM_STAGE_ACCESS: adminFeatureFlag,
 
-  LOVE_ISLAND: betaTimeBasedFeatureFlag(new Date("2025-05-01T00:00:00Z")),
-
-  GOODBYE_BERT: timeBasedFeatureFlag(new Date("2025-05-01T00:00:00Z")),
-  FLOWER_BOXES: betaTimeBasedFeatureFlag(new Date("2025-05-01T00:00:00Z")),
-
-  MEGA_BOUNTIES: betaTimeBasedFeatureFlag(new Date("2025-05-05T00:00:00Z")),
-
   WITHDRAWAL_THRESHOLD: timePeriodFeatureFlag({
     start: new Date("2025-05-08T00:00:00Z"),
     end: new Date("2025-06-20T00:00:00.000Z"),
   }),
+
+  MODERATOR: (game) => !!game.wardrobe.Halo,
 } satisfies Record<string, FeatureFlag>;
 
 export type FeatureName = keyof typeof FEATURE_FLAGS;

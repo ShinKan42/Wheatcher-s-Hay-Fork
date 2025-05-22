@@ -399,7 +399,7 @@ export const INITIAL_FARM: GameState = {
   previousInventory: {},
   wardrobe: {},
   previousWardrobe: {},
-  bank: { taxFreeSFL: 0 },
+  bank: { taxFreeSFL: 0, withdrawnAmount: 0 },
 
   calendar: {
     dates: [],
@@ -532,9 +532,7 @@ export const INITIAL_FARM: GameState = {
 
   fishing: {
     dailyAttempts: {},
-    weather: "Sunny",
     wharf: {},
-    beach: {},
   },
   mailbox: {
     read: [],
@@ -734,7 +732,7 @@ export const TEST_FARM: GameState = {
     choresSkipped: 0,
   },
   stock: INITIAL_STOCK(),
-  bank: { taxFreeSFL: 0 },
+  bank: { taxFreeSFL: 0, withdrawnAmount: 0 },
   chickens: {},
   experiments: [],
   farmActivity: {},
@@ -743,9 +741,7 @@ export const TEST_FARM: GameState = {
   island: { type: "basic" },
   farmHands: { bumpkins: {} },
   fishing: {
-    weather: "Sunny",
     wharf: {},
-    beach: {},
     dailyAttempts: {},
   },
   greenhouse: {
@@ -1013,7 +1009,7 @@ export const EMPTY: GameState = {
   calendar: {
     dates: [],
   },
-  bank: { taxFreeSFL: 0 },
+  bank: { taxFreeSFL: 0, withdrawnAmount: 0 },
   experiments: [],
   minigames: {
     games: {},
@@ -1088,9 +1084,7 @@ export const EMPTY: GameState = {
   farmActivity: {},
   milestones: {},
   fishing: {
-    weather: "Sunny",
     wharf: {},
-    beach: {},
     dailyAttempts: {},
   },
   mushrooms: {
