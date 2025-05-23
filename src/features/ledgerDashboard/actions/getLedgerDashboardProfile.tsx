@@ -7,18 +7,18 @@ type LedgerEntry = {
   balance: number;
 };
 
-type FlowerDashboardProfileData = {
+type LedgerDashboardProfileData = {
   ledger: LedgerEntry[];
   teamFees: {
     weeklyFees: number;
   };
 };
 
-export const getFlowerDashboardProfile = async (
+export const getLedgerDashboardProfile = async (
   token: string,
   id: string,
-): Promise<FlowerDashboardProfileData> => {
-  const res = await fetch(`${CONFIG.API_URL}/flower-dashboard/${id}`, {
+): Promise<LedgerDashboardProfileData> => {
+  const res = await fetch(`${CONFIG.API_URL}/ledger-dashboard/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

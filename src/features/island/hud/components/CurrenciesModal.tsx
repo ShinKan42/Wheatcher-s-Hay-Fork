@@ -65,11 +65,15 @@ const _token = (state: AuthMachineState) =>
 const _farmId = (state: MachineState) => state.context.farmId;
 const _autosaving = (state: MachineState) => state.matches("autosaving");
 
-export const CurrenciesModal: React.FC<Props> = ({ show, onClose }) => {
+export const CurrenciesModal: React.FC<Props> = ({
+  show,
+  onClose,
+  initialPage,
+}) => {
   const { authService } = useContext(AuthProvider.Context);
   const { gameService } = useContext(Context);
 
-  const [page, setPage] = useState<TransactionPage>("menu");
+  const [page, setPage] = useState<TransactionPage>(initialPage ?? "menu");
   const [showXsolla, setShowXsolla] = useState<string>();
   const [loading, setLoading] = useState(false);
   const [price, setPrice] = useState<Price>();
@@ -112,14 +116,6 @@ export const CurrenciesModal: React.FC<Props> = ({ show, onClose }) => {
 
     onboardingAnalytics.logEvent("begin_checkout");
   }, []);
-
-  const onMaticBuy = async () => {
-    gameService.send("BUY_GEMS", {
-      currency: "MATIC",
-      amount: price?.amount,
-    });
-    onClose();
-  };
 
   const onFlowerBuy = async (quote: number) => {
     gameService.send("gems.bought", {
@@ -228,7 +224,6 @@ export const CurrenciesModal: React.FC<Props> = ({ show, onClose }) => {
                   price={price}
                   onFlowerBuy={onFlowerBuy}
                   setPrice={setPrice}
-                  onMaticBuy={onMaticBuy}
                   onCreditCardBuy={handleCreditCardBuy}
                   onHideBuyBBLabel={(hide) => setHideBuyBBLabel(hide)}
                   hideIntroLabel={hideBuyBBLabel}

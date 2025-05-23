@@ -91,6 +91,7 @@ import { LoveCharm } from "./components/LoveCharm";
 import { ClaimReferralRewards } from "./components/ClaimReferralRewards";
 import { SoftBan } from "features/retreat/components/personhood/SoftBan";
 import { RewardBox } from "features/rewardBoxes/RewardBox";
+import { FlowerDashboard } from "features/flowerDashboard/FlowerDashboard";
 
 function camelToDotCase(str: string): string {
   return str.replace(/([a-z])([A-Z])/g, "$1.$2").toLowerCase() as string;
@@ -125,6 +126,8 @@ const SHOW_MODAL: Record<StateValues, boolean> = {
   claimingStreamReward: false,
   claimingStreamRewardSuccess: false,
   claimingStreamRewardFailed: false,
+  airdroppingRewardFailed: false,
+
   // Every new state should be added below here
   gems: true,
   communityCoin: true,
@@ -333,6 +336,7 @@ const GameContent: React.FC = () => {
         <Routes>
           <Route path="/" element={<Land />}>
             <Route path="marketplace/*" element={<Marketplace />} />
+            <Route path="flower-dashboard" element={<FlowerDashboard />} />
           </Route>
           {/* Legacy route */}
           <Route path="/farm" element={<Land />} />

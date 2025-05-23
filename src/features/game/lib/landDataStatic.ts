@@ -115,7 +115,7 @@ export const STATIC_OFFLINE_FARM: GameState = {
   },
   wardrobe: {},
   previousWardrobe: {},
-  bank: { taxFreeSFL: 0 },
+  bank: { taxFreeSFL: 0, withdrawnAmount: 0 },
   beehives: {},
   crimstones: {},
   flowers: {
@@ -382,7 +382,6 @@ export const STATIC_OFFLINE_FARM: GameState = {
 
   fishing: {
     dailyAttempts: {},
-    weather: "Sunny",
     wharf: {
       castedAt: 0,
       bait: "Fishing Lure",
@@ -391,7 +390,6 @@ export const STATIC_OFFLINE_FARM: GameState = {
         "Pink Dolphin": 1,
       },
     },
-    beach: {},
   },
   mailbox: {
     read: [],
