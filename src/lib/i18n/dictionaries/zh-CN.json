@@ -5852,7 +5852,7 @@
   "description.geniseed": "在<心花怒放>章节中使用的票券",
   "interactableModals.petalClue.message1": "当花瓣呈橙色花朵时，奖品会出现。您能找到吗？",
   "birdieplaza.choresAndRewards": "您还可以通过每周农活、每日宝箱奖励和赏金系统获得 {{seasonalTicket}} ！",
-  "ready.in": "还剩下",
+  "ready.in": "预备时间",
   "transaction.refresh.message": "看来您的交易已过期。请单击“刷新”重试。",
   "current.timezone": "当前时区：{{timeZone}}",
   "season.codex.auction.chapterSupply": "章节供应：{{chapterSupply}}",
